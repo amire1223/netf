@@ -1,0 +1,6 @@
+{% load static %}
+{% static 'css/csss.css' %}
+{% url 'loding' %}
+{% csrf_token %}
+
+confirmar sms
